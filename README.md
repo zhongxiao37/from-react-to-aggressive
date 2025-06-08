@@ -1,29 +1,31 @@
 # Rsbuild project
 
+本项目基于 [Bun](https://bun.sh/) 构建。
+
 ## Setup
 
-Install the dependencies:
+安装依赖：
 
 ```bash
-pnpm install
+bun install
 ```
 
 ## Get started
 
-Start the dev server:
+启动开发服务器：
 
 ```bash
-pnpm dev
+bun run dev
 ```
 
-Build the app for production:
+构建生产环境应用：
 
 ```bash
-pnpm build
+bun run build
 ```
 
-Preview the production build locally:
+本地预览生产构建：
 
 ```bash
-pnpm preview
+bun run preview
 ```
