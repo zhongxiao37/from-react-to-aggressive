@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Layout from './components/layouts/Layout';
 import App from './App';
 
-const rootEl = document.getElementById('root');
-if (rootEl) {
-  const root = ReactDOM.createRoot(rootEl);
-  root.render(
-    <React.StrictMode>
+// 导入样式
+import './styles/global.css';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <Layout>
       <App />
-    </React.StrictMode>,
-  );
-}
+    </Layout>
+  </React.StrictMode>
+); 
